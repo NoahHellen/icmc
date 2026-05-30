@@ -31,6 +31,14 @@ cd backend/Api
 dotnet run
 ```
 
+### Local database
+
+To set up a local database for development:
+
+```
+docker run --name icmc_local -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=ANY_PASSWORD' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
+```
+
 ### Frontend
 
 To run the frontend locally:
