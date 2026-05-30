@@ -2,7 +2,7 @@
   "expo": {
     "name": "ICMC",
     "slug": "icmc",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -20,7 +20,7 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.icmc.gearapp",
-      "versionCode": 17
+      "versionCode": 19
     },
     "web": {
       "favicon": "./assets/favicon.png"

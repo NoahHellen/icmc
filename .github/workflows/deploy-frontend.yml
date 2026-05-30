@@ -39,3 +39,18 @@ jobs:
       - name: Build Android AAB
         working-directory: frontend
         run: eas build --platform android --profile production --non-interactive
+
+      - name: Extract version
+        id: get_version
+        run: |
+          VERSION=$(jq -r .expo.version frontend/app.json)
+          echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Create and push tag
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git tag v${{ steps.get_version.outputs.VERSION }}
+          git push origin v${{ steps.get_version.outputs.VERSION }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
