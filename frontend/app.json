@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "ICMC",
+    "slug": "icmc",
+    "version": "1.1.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.icmc.gearapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.icmc.gearapp",
+      "versionCode": 17
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "scheme": "icmc",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "extra": {
+      "eas": {
+        "projectId": "df5e47f3-d973-42c1-a97b-6efa52d30fc4"
+      }
+    },
+    "owner": "noahhellen"
+  }
+}
